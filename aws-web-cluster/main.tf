@@ -144,12 +144,6 @@ resource "aws_security_group" "alb" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  ingress {
-     from_port = var.ssh_port
-     to_port = var.ssh_port
-     protocol = "TCP"
-     cidr_blocks = ["0.0.0.0/0"]
-}
   # Allow all outbound requests
   egress {
     from_port   = 0
