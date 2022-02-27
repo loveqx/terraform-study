@@ -17,6 +17,13 @@ variable "ssh_port" {
 
 }
 
+variable "custon_port" {
+
+   description = "The game port"
+  type = number
+  default = 6629
+}
+
 
 variable "alb_name" {
   description = "The name of the ALB"
